@@ -1,0 +1,73 @@
+body{
+    background-color: #101214;
+    color: #8b8b8b;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.widget{
+    display: inline-block;
+    background-color: #2a2a2a;
+    height: 200px;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.widget header{
+    line-height: 30px;
+    text-transform: uppercase;
+    background-color: #272727;
+    padding: 5px;
+}
+
+.widget header h1{
+    display: inline-block;
+    width: 90%;
+    margin: 0;
+    font-size: 12px;
+}
+
+.widget header i{
+    display: inline-block;
+    width: 8%;
+}
+
+.widget p{
+    text-align: center;
+    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", sans-serif;
+    color: #d3d4d4;
+    font-weight: 100;
+    font-size: 75px;
+}
+
+.widget i.loader{
+    width: 100%;
+    margin-top: 75px;
+    display: block;
+    text-align: center;
+}
+
+.container{
+    margin-bottom: 10px;
+}
+
+.last-upload{
+    width: 73%;
+    margin-right: 10px;
+}
+
+.uploads{
+    width: 23%;
+}
+
+.vee, .new-data-points, .raw-table, .history-table, .jobs, .web-server-cpu{
+    width: 32%;
+    margin-right: 10px;
+}
+
+.alarms-checked, .aggregation-table, .web-hits{
+    width: 31%;
+}

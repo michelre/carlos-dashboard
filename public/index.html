@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="./style/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="widget last-upload"  data-bind="visible: widgets.lastUpload.visible">
+            <header>
+                <h1>Last Upload</h1>
+                <i data-bind="click: widgets.lastUpload.visibleFn" class="fa fa-times"></i>
+            </header>
+            <i data-bind="visible: widgets.lastUpload.waiting" class="fa fa-cog fa-spin loader"></i>
+            <p data-bind="text: widgets.lastUpload.displayText"></p>
+        </div>
+
+        <div class="widget uploads" data-bind="visible: widgets.uploads.visible">
+            <header>
+                <h1>Uploads</h1>
+                <i data-bind="click: widgets.uploads.visibleFn" class="fa fa-times"></i>
+            </header>
+            <i data-bind="visible: widgets.uploads.waiting" class="fa fa-cog fa-spin loader"></i>
+            <p data-bind="text: widgets.uploads.text"></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="widget vee" data-bind="visible: widgets.vee.visible">
+            <header>
+                <h1>Vee</h1>
+                <i data-bind="click: widgets.vee.visibleFn" class="fa fa-times"></i>
+            </header>
+            <i data-bind="visible: widgets.vee.waiting" class="fa fa-cog fa-spin loader"></i>
+            <p data-bind="text: widgets.vee.text"></p>
+        </div>
+
+        <div class="widget new-data-points" data-bind="visible: widgets.newDataPoints.visible">
+            <header>
+                <h1>New Data Points</h1>
+                <i data-bind="click: widgets.newDataPoints.visibleFn" class="fa fa-times"></i>
+            </header>
+            <i data-bind="visible: widgets.newDataPoints.waiting" class="fa fa-cog fa-spin loader"></i>
+            <p data-bind="text: widgets.newDataPoints.text"></p>
+        </div>
+
+        <div class="widget alarms-checked" data-bind="visible: widgets.alarmsChecked.visible">
+            <header>
+                <h1>Alarms Checked</h1>
+                <i data-bind="click: widgets.alarmsChecked.visibleFn" class="fa fa-times"></i>
+            </header>
+            <i data-bind="visible: widgets.alarmsChecked.waiting" class="fa fa-cog fa-spin loader"></i>
+            <p data-bind="text: widgets.alarmsChecked.text"></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="widget raw-table" data-bind="visible: widgets.rawTable.visible">
+            <header>
+                <h1>Raw table</h1>
+                <i data-bind="click: widgets.rawTable.visibleFn" class="fa fa-times"></i>
+            </header>
+            <i data-bind="visible: widgets.rawTable.waiting" class="fa fa-cog fa-spin loader"></i>
+            <p data-bind="text: widgets.rawTable.text"></p>
+        </div>
+
+        <div class="widget history-table" data-bind="visible: widgets.historyTable.visible">
+            <header>
+                <h1>History Table</h1>
+                <i data-bind="click: widgets.historyTable.visibleFn" class="fa fa-times"></i>
+            </header>
+            <i data-bind="visible: widgets.historyTable.waiting" class="fa fa-cog fa-spin loader"></i>
+            <p data-bind="text: widgets.historyTable.text"></p>
+        </div>
+
+        <div class="widget aggregation-table" data-bind="visible: widgets.aggregationTable.visible">
+            <header>
+                <h1>Aggregation table</h1>
+                <i data-bind="click: widgets.aggregationTable.visibleFn" class="fa fa-times"></i>
+            </header>
+            <i data-bind="visible: widgets.aggregationTable.waiting" class="fa fa-cog fa-spin loader"></i>
+            <p data-bind="text: widgets.aggregationTable.text"></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="widget jobs" data-bind="visible: widgets.jobs.visible">
+            <header>
+                <h1>Jobs</h1>
+                <i data-bind="click: widgets.jobs.visibleFn" class="fa fa-times"></i>
+            </header>
+            <i data-bind="visible: widgets.jobs.waiting" class="fa fa-cog fa-spin loader"></i>
+            <p data-bind="text: widgets.jobs.text"></p>
+        </div>
+
+        <div class="widget web-server-cpu" data-bind="visible: widgets.webServerCPU.visible">
+            <header>
+                <h1>Web server CPU</h1>
+                <i data-bind="click: widgets.webServerCPU.visibleFn" class="fa fa-times"></i>
+            </header>
+            <i data-bind="visible: widgets.webServerCPU.waiting" class="fa fa-cog fa-spin loader"></i>
+            <p data-bind="text: widgets.webServerCPU.text"></p>
+        </div>
+
+        <div class="widget web-hits" data-bind="visible: widgets.webHits.visible">
+            <header>
+                <h1>Web Hits</h1>
+                <i data-bind="click: widgets.webHits.visibleFn" class="fa fa-times"></i>
+            </header>
+            <i data-bind="visible: widgets.webHits.waiting" class="fa fa-cog fa-spin loader"></i>
+            <p data-bind="text: widgets.webHits.text"></p>
+        </div>
+    </div>
+
+
+    <script type="application/javascript" src="./vendor/jquery-1.11.3.js"></script>
+    <script type="application/javascript" src="./vendor/moment-2.10.6.js"></script>
+    <script type="application/javascript" src="./vendor/ramda-0.18.0.js"></script>
+    <script type="application/javascript" src="./vendor/knockout-3.3.0.js"></script>
+    <script type="application/javascript" src="./js/app.js"></script>
+</body>
+</html>
