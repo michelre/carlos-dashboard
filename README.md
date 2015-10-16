@@ -1,4 +1,7 @@
-# carlos-dashboard
+# Carlos Dashboard
+
+## Example
+http://46.101.209.240:3000/static/index.html
 
 ## Setup
 
