@@ -1,7 +1,7 @@
 function Vm(){
     var self = this;
 
-    var api = "http://localhost:3000/api";
+    var api = "http://" + window.location.hostname + ":3000/api";
 
     self.widgets = {
         lastUpload: new Widget(null, function(text){
